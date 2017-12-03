@@ -1,16 +1,20 @@
 package com.jude.prisoner;
+
+import com.jude.Manager;
+
 import com.jude.Prisoner;
 import com.jude.Manager;
+
 /**
- * Created by chenChanghong on 2015/11/6.
+ * Created by Mr.Jude on 2015/10/28.
  */
-public class chenChanghongPrisoner implements Prisoner{
-   int totalCount;
+public class RedundantPrisoner implements Prisoner {
+    int totalCount;
     int totalPerson;
 
     @Override
     public String getName() {
-        return "陈昶宏2015213957";
+        return "吴立嵩2025210855";
     }
 
     @Override
@@ -19,21 +23,14 @@ public class chenChanghongPrisoner implements Prisoner{
         this.totalPerson = totalPerson;
     }
 
+    @Override
     public int take(int index, int last) {
-     if(index==0||(index+1)==totalPerson)//生存或死亡这是个问题
-     {
-      return last;
-      }
-    else if（last>=(totalCount-last)/(index+1)）
-    ｛
-        return (totalCount-last)/(index+1);
-    ｝
-     
+         return (totalCount-last)/(index+2);
     }
+
     @Override
     public void result(boolean survived) {
 
     }
-
 
 }

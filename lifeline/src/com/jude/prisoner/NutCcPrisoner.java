@@ -1,18 +1,18 @@
 package com.jude.prisoner;
 
-import com.jude.Prisoner;
 import com.jude.Manager;
+import com.jude.Prisoner;
 
 /**
- * Created by Mr.Jude on 2015/10/28.
+ * Created by c on 2015/11/6.
  */
-public class FortunePrisoner implements Prisoner {
+public class NutCcPrisoner implements Prisoner {
     int totalCount;
     int totalPerson;
 
     @Override
     public String getName() {
-        return "刘鹏2014214019";
+        return "鍚村�╁矚2015210408";
     }
 
     @Override
@@ -23,11 +23,12 @@ public class FortunePrisoner implements Prisoner {
 
     @Override
     public int take(int index, int last) {
-        return  ((totalCount-last)/(index+1) + totalCount/totalPerson)/7；//为什么是7？因为我喜欢啊！
+
+        return ((totalCount-last)/(index+1) + totalCount/totalPerson)/2;
     }
 
     @Override
-    public void result(boolean survived) {
+    public void result(boolean survived) {//==
 
     }
 

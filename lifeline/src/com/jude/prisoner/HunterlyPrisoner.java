@@ -4,31 +4,32 @@ import com.jude.Manager;
 import com.jude.Prisoner;
 
 /**
- * Created by ingra on 2015-11-06.
+ * Created by lxx569378712m on 2015/11/6.
  */
-public class IngramyangPrisoner implements Prisoner {
+public class HunterlyPrisoner implements Prisoner {
     int totalCount;
     int totalPerson;
 
     @Override
     public String getName() {
-        return "���Ӵ�2015211670";
+        return "林兴祥2015212945";
     }
 
     @Override
     public void begin(Manager manager, int totalPerson, int totalCount) {
         this.totalCount = totalCount;
         this.totalPerson = totalPerson;
+
     }
 
     @Override
     public int take(int index, int last) {
-        return (int)(totalCount * 0.98/ totalPerson);
-    }
 
-    @Override
-    public void result(boolean survived) {
+        return totalCount - totalPerson;//我要团灭
+         }
 
-    }
+        @Override
+        public void result ( boolean survived){
+        }
+
 }
-//���ǲ����Ҿ���Ϊ�˽�github��ҵ==
